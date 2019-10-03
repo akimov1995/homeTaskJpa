@@ -39,7 +39,7 @@ public class ProducerDao {
             entityManager.getTransaction().begin();
             entityManager.remove(entityManager.find(Producer.class, id));
             entityManager.getTransaction().commit();
-            System.out.println(MessageFormat.format("Из таблицы artists удалён продюсер с id = {0}", id));
+            System.out.println(MessageFormat.format("Из таблицы producers удалён продюсер с id = {0}", id));
         } catch (Exception e) {
             entityManager.getTransaction().rollback();
             System.out.println(e.getMessage());
