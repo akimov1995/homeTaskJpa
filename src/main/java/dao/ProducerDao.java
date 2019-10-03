@@ -71,7 +71,7 @@ public class ProducerDao {
                     .executeUpdate();
             entityManager.getTransaction().commit();
 
-            System.out.println(MessageFormat.format("В таблице producers изменён исполнитель с id = {0}," +
+            System.out.println(MessageFormat.format("В таблице producers изменён продюсер с id = {0}," +
                     " теперь producer = {1}", producer.getId(), producer));
         } catch (Exception e) {
             entityManager.getTransaction().rollback();
